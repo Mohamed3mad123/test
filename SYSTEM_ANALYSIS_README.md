@@ -33,22 +33,12 @@
 
 ---
 
-### 🔹 Conceptual ERD & Relationship Mapping
+### 🔹 Conceptual Entity-Relationship Diagram (ERD)
 <p align="center">
   <img src="images/Mapping2.png" alt="Conceptual ERD Mapping" width="700">
 </p>
 <p align="center">
-  <em>Figure 2: Conceptual entity-relationship structure illustrating cardinality and table connections.</em>
-</p>
-
----
-
-### 🔹 Detailed Entity-Relationship Diagram (ERD)
-<p align="center">
-  <img src="images/ERD.png" alt="Entity Relationship Diagram" width="750">
-</p>
-<p align="center">
-  <em>Figure 3: Detailed MS SQL Server ERD showcasing the database schema implementation, constraints, and relationships.</em>
+  <em>Figure 2: Conceptual entity-relationship structure illustrating table attributes, entities, and relationships.</em>
 </p>
 
 * **Schema Specifications:**
@@ -56,6 +46,16 @@
   * **DimYear:** Primary Key (`Year`), Attributes (Years 2000–2022).
   * **DimSex:** Primary Key (`Sex_ID`), Attributes (`Sex_Name`: Men, Women, Both sexes).
   * **Fact Tables:** Primary Key (`Country_Code` + `Year` + `Sex_ID`), Attributes (Prevalence / Economic metrics).
+
+---
+
+### 🔹 SQL Server Database Schema (Relational Data Warehouse)
+<p align="center">
+  <img src="images/ERD.png" alt="SQL Server Database Diagram" width="750">
+</p>
+<p align="center">
+  <em>Figure 3: Physical database diagram generated from MS SQL Server showcasing the implemented Star Schema tables, data types, primary/foreign keys, and referential integrity constraints.</em>
+</p>
 
 ---
 
